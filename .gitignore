@@ -1,0 +1,22 @@
+# Vagrant project files (kept locally, not tracked in repo)
+Vagrantfile
+provision-*.sh
+
+# Vagrant local state (per-machine, not shareable)
+.vagrant/
+
+# Downloaded/built box files
+*.box
+
+# Vagrant logs
+*.log
+
+# Local VirtualBox export files, if any
+*.ova
+*.vdi
+*.vmdk
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
