@@ -1,0 +1,188 @@
+{
+ "name": "SmartCity Solutions AD - първоначален риск",
+ "versions": {
+  "attack": "19",
+  "navigator": "5.1.0",
+  "layer": "4.5"
+ },
+ "domain": "enterprise-attack",
+ "description": "Скор = P×I от Регистъра на риска (1-25). При няколко риска на една техника се взема най-високият.",
+ "filters": {
+  "platforms": [
+   "Linux",
+   "Windows",
+   "macOS",
+   "Network",
+   "Containers",
+   "IaaS",
+   "SaaS",
+   "Office 365",
+   "Azure AD",
+   "Google Workspace",
+   "PRE"
+  ]
+ },
+ "sorting": 3,
+ "layout": {
+  "layout": "side",
+  "aggregateFunction": "max",
+  "showID": true,
+  "showName": true,
+  "showAggregateScores": false,
+  "countUnscored": false,
+  "expandedSubtechniques": "annotated"
+ },
+ "hideDisabled": false,
+ "techniques": [
+  {
+   "techniqueID": "T1021",
+   "score": 15,
+   "comment": "R-02 (15): Хакнат сензор на контейнер достига VLAN-а на светофарите и променя режима им (въздействие 5: безопасност)",
+   "enabled": true,
+   "showSubtechniques": false
+  },
+  {
+   "techniqueID": "T1070",
+   "score": 12,
+   "comment": "R-09 (12): Нападател изтрива логовете и инцидентът не може да се докаже пред надзорния орган (въздействие 4: надзорен орган)",
+   "enabled": true,
+   "showSubtechniques": false
+  },
+  {
+   "techniqueID": "T1071.001",
+   "score": 12,
+   "comment": "R-04 (12): Заразено устройство се свързва към C2 сървър в интернет и участва в ботнет (въздействие 3: локална публичност)",
+   "enabled": true,
+   "showSubtechniques": true
+  },
+  {
+   "techniqueID": "T1078",
+   "score": 20,
+   "comment": "R-01 (20): Нападател с откраднати данни на устройство публикува команди към светофарите (въздействие 5: работа/безопасност) | R-07 (12): Нападател налучква парола на оператор и изпраща конфигурационни команди (въздействие 4: всички потребители) | R-12 (12): Оператор в Ямбол въвежда данните си във фалшива страница и нападателят изпраща команди (въздействие 4)",
+   "enabled": true,
+   "showSubtechniques": false
+  },
+  {
+   "techniqueID": "T1078.001",
+   "score": 16,
+   "comment": "R-03 (16): Нападател влиза с фабрични данни в много устройства едновременно и ги пренасочва (въздействие 4: всички потребители)",
+   "enabled": true,
+   "showSubtechniques": true
+  },
+  {
+   "techniqueID": "T1105",
+   "score": 12,
+   "comment": "R-04 (12): Заразено устройство се свързва към C2 сървър в интернет и участва в ботнет (въздействие 3: локална публичност)",
+   "enabled": true,
+   "showSubtechniques": false
+  },
+  {
+   "techniqueID": "T1110",
+   "score": 12,
+   "comment": "R-07 (12): Нападател налучква парола на оператор и изпраща конфигурационни команди (въздействие 4: всички потребители)",
+   "enabled": true,
+   "showSubtechniques": false
+  },
+  {
+   "techniqueID": "T1190",
+   "score": 12,
+   "comment": "R-05 (12): Нападател експлоатира уязвимост в публичното табло и подменя показваното съдържание (въздействие 3: локална публичност)",
+   "enabled": true,
+   "showSubtechniques": false
+  },
+  {
+   "techniqueID": "T1486",
+   "score": 9,
+   "comment": "R-14 (9): Криптиране на хоста унищожава и копията на конфигурацията (въздействие 3: до един ден)",
+   "enabled": true,
+   "showSubtechniques": false
+  },
+  {
+   "techniqueID": "T1489",
+   "score": 12,
+   "comment": "R-13 (12): Пожар или спиране на тока в Ямбол спира управлението на трите общини (въздействие 4: работа)",
+   "enabled": true,
+   "showSubtechniques": false
+  },
+  {
+   "techniqueID": "T1498",
+   "score": 6,
+   "comment": "R-06 (6): Претоварване на публичното табло прави данните недостъпни за граждани, управлението остава работещо (въздействие 2)",
+   "enabled": true,
+   "showSubtechniques": false
+  },
+  {
+   "techniqueID": "T1499",
+   "score": 6,
+   "comment": "R-08 (6): Спиране на Keycloak не позволява вход на операторите за няколко часа (въздействие 3: работа на услугата, до един ден)",
+   "enabled": true,
+   "showSubtechniques": false
+  },
+  {
+   "techniqueID": "T1552.004",
+   "score": 8,
+   "comment": "R-11 (8): Изтичане на ключа позволява подмяна на брокера; изтекъл сертификат спира публичното табло (въздействие 4: надзорен орган)",
+   "enabled": true,
+   "showSubtechniques": true
+  },
+  {
+   "techniqueID": "T1557",
+   "score": 10,
+   "comment": "R-10 (10): Нападател подменя брокера и подава фалшиви команди на устройства (въздействие 5: безопасност)",
+   "enabled": true,
+   "showSubtechniques": false
+  },
+  {
+   "techniqueID": "T1562.001",
+   "score": 12,
+   "comment": "R-09 (12): Нападател изтрива логовете и инцидентът не може да се докаже пред надзорния орган (въздействие 4: надзорен орган)",
+   "enabled": true,
+   "showSubtechniques": true
+  },
+  {
+   "techniqueID": "T1565.002",
+   "score": 20,
+   "comment": "R-01 (20): Нападател с откраднати данни на устройство публикува команди към светофарите (въздействие 5: работа/безопасност) | R-10 (10): Нападател подменя брокера и подава фалшиви команди на устройства (въздействие 5: безопасност)",
+   "enabled": true,
+   "showSubtechniques": true
+  },
+  {
+   "techniqueID": "T1566",
+   "score": 12,
+   "comment": "R-12 (12): Оператор в Ямбол въвежда данните си във фалшива страница и нападателят изпраща команди (въздействие 4)",
+   "enabled": true,
+   "showSubtechniques": false
+  },
+  {
+   "techniqueID": "T1570",
+   "score": 15,
+   "comment": "R-02 (15): Хакнат сензор на контейнер достига VLAN-а на светофарите и променя режима им (въздействие 5: безопасност)",
+   "enabled": true,
+   "showSubtechniques": false
+  },
+  {
+   "techniqueID": "T1584",
+   "score": 16,
+   "comment": "R-03 (16): Нападател влиза с фабрични данни в много устройства едновременно и ги пренасочва (въздействие 4: всички потребители)",
+   "enabled": true,
+   "showSubtechniques": false
+  }
+ ],
+ "gradient": {
+  "colors": [
+   "#8ec843",
+   "#ffe766",
+   "#ff6666"
+  ],
+  "minValue": 1,
+  "maxValue": 25
+ },
+ "legendItems": [],
+ "metadata": [],
+ "links": [],
+ "showTacticRowBackground": false,
+ "tacticRowBackground": "#dddddd",
+ "selectTechniquesAcrossTactics": true,
+ "selectSubtechniquesWithParent": false,
+ "selectVisibleTechniques": false
+}
