@@ -1,0 +1,2 @@
+vagrant@srv: Permission denied (publickey).
+vagrant@srv: Permission denied (publickey).

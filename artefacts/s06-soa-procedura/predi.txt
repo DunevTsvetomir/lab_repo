@@ -1,0 +1,4 @@
+Wed Nov  4 10:01:58 UTC 2026
+permitrootlogin without-password
+passwordauthentication no
+kbdinteractiveauthentication no

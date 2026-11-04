@@ -1,0 +1,13 @@
+Nov 04 10:01:11 srv sshd[1077]: Accepted publickey for vagrant from 192.168.10.1 port 46240 ssh2: ED25519 SHA256:j8IGWX/jPHHT2Ol6V2B/0dOomVyTdEXu+Bq+vMYGLPw
+Nov 04 10:01:11 srv sshd[1077]: pam_unix(sshd:session): session opened for user vagrant(uid=1000) by (uid=0)
+Nov 04 10:01:11 srv sshd[1077]: pam_env(sshd:session): deprecated reading of user environment enabled
+Nov 04 10:04:58 srv systemd[1]: Reloading ssh.service - OpenBSD Secure Shell server...
+Nov 04 10:04:58 srv sshd[475]: Received SIGHUP; restarting.
+Nov 04 10:04:58 srv systemd[1]: Reloaded ssh.service - OpenBSD Secure Shell server.
+Nov 04 10:04:58 srv sshd[475]: Server listening on 0.0.0.0 port 22.
+Nov 04 10:04:58 srv sshd[475]: Server listening on :: port 22.
+Nov 04 10:06:32 srv sshd[15420]: Accepted publickey for vagrant from 192.168.10.1 port 50072 ssh2: ED25519 SHA256:j8IGWX/jPHHT2Ol6V2B/0dOomVyTdEXu+Bq+vMYGLPw
+Nov 04 10:06:32 srv sshd[15420]: pam_unix(sshd:session): session opened for user vagrant(uid=1000) by (uid=0)
+Nov 04 10:06:32 srv sshd[15420]: pam_env(sshd:session): deprecated reading of user environment enabled
+Nov 04 10:06:32 srv sshd[15420]: pam_unix(sshd:session): session closed for user vagrant
+Nov 04 10:08:02 srv sshd[37133]: Connection closed by authenticating user vagrant 192.168.10.1 port 34972 [preauth]
